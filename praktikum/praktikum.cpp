@@ -4,9 +4,6 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
-#include <iostream>
-
 #include <iostream>
 	using namespace std;
 
@@ -59,7 +56,13 @@ int main()
 		previous->next = nodeBaru;
 	}
 
-	bool serachNode(int nim, Node* current, Node* previous) {
+	bool serachNode(int nim, Node * current, Node * previous) {
 		previous = START;
 		current = START;
-	
+		while (current != NULL && nim > current->noMhs)
+		{
+			previous = current;
+			current = current->next;
+		}
+
+		
