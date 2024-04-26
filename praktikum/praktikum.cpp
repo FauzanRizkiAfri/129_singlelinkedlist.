@@ -7,12 +7,6 @@ int main()
     std::cout << "Hello World!\n";
 #include <iostream>
 	using namespace std;
-#include <iostream>
-	using namespace std;
-
-#include <iostream>
-	using namespace std;
-
 	struct Node {
 		int noMhs;
 		string name;
@@ -44,4 +38,16 @@ int main()
 			return;
 		}
 
-		
+		Node* previous = START;
+		Node* current = START;
+
+		while ((current != NULL) && (nim >= current->noMhs))
+		{
+			if (nim == current->noMhs)
+			{
+				cout << "NIM sudah ada" << endl;
+				return;
+			}
+			previous = current;
+			current = current->next;
+		}
