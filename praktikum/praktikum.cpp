@@ -6,7 +6,10 @@ int main()
 {
     std::cout << "Hello World!\n";
 #include <iostream>
+
+#include <iostream>
 	using namespace std;
+
 	struct Node {
 		int noMhs;
 		string name;
@@ -51,3 +54,12 @@ int main()
 			previous = current;
 			current = current->next;
 		}
+
+		nodeBaru->next = current;
+		previous->next = nodeBaru;
+	}
+
+	bool serachNode(int nim, Node* current, Node* previous) {
+		previous = START;
+		current = START;
+	
