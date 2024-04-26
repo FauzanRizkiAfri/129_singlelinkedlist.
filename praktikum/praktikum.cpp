@@ -7,6 +7,8 @@ int main()
     std::cout << "Hello World!\n";
 #include <iostream>
 	using namespace std;
+#include <iostream>
+	using namespace std;
 
 	struct Node {
 		int noMhs;
@@ -16,4 +18,15 @@ int main()
 
 	Node* START = NULL;
 
+	void addNode() {
+		int nim;
+		string nama;
+		Node* nodeBaru = new Node();
+		cout << "Masukkan NIM: ";
+		cin >> nim;
+		cout << "Masukkan Nama: ";
+		cin >> nama;
+		nodeBaru->noMhs = nim;
+		nodeBaru->name = nama;
 
+	
