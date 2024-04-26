@@ -65,4 +65,8 @@ int main()
 			current = current->next;
 		}
 
+		if (current == NULL)
+		{
+			return false;
+		}
 		
