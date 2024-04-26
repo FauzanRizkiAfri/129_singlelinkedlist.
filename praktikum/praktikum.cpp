@@ -69,4 +69,11 @@ int main()
 		{
 			return false;
 		}
-		
+		else if (current->noMhs == nim)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
